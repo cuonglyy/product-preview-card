@@ -60,6 +60,7 @@ table {
 
 :root {
     --primary-dark-cyan: hsl(158, 36%, 37%);
+    --primary-dark-cyan-active: hsl(161, 47%, 20%);
     --primary-cream: hsl(30, 38%, 92%);
 
     --neutral-very-dark-blue: hsl(212, 21%, 14%);
@@ -151,6 +152,14 @@ body {
     color: var(--neutral-white);
     font-size: 1rem;
     font-weight: 700;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: var(--primary-dark-cyan-active)
 }
 
 .btn img {
