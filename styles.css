@@ -54,10 +54,27 @@ table {
 }
 
 
+
+
+/*
+    SCREEN READER ONLY
+*/
+.sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
+
+
+
 /* 
         CSS CODE
 */
-
 :root {
     --primary-dark-cyan: hsl(158, 36%, 37%);
     --primary-dark-cyan-active: hsl(161, 47%, 20%);
@@ -75,6 +92,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fraunces-font {
@@ -84,10 +104,6 @@ body {
 .card-container {
     display: flex;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--neutral-white);
     border-radius: 12px;
 }
