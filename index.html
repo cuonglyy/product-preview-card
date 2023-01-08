@@ -13,8 +13,10 @@
 <body>
   <main>
     <div class="card-container">
-      <img class="img-desktop" src="./images/image-product-desktop.jpg" alt="Image of perfume">
-      <img class="img-mobile" src="./images/image-product-mobile.jpg" alt="Image of perfume">
+      <picture>
+        <source media="(max-width: 375px)" srcset="./images/image-product-mobile.jpg">
+        <img src="./images/image-product-desktop.jpg" alt="Image of perfume">
+      </picture>
       <div class="card-info">
         <p class="item-type">PERFUME</p>
 

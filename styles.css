@@ -108,13 +108,9 @@ body {
     border-radius: 12px;
 }
 
-.img-desktop {
+picture > img {
     width: 21rem;
     border-radius: 12px 0 0 12px;
-}
-
-.img-mobile {
-    display: none;
 }
 
 .card-info {
@@ -166,7 +162,7 @@ body {
     border-radius: 8px;
     padding: 1rem;
     color: var(--neutral-white);
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 700;
 }
 
@@ -200,15 +196,12 @@ footer a {
 @media screen and (max-width: 375px) {
     .card-container {
         flex-direction: column;
+        margin: auto;
+        padding: 0 1.1rem;
+        width: 80%;
     }
 
-    .img-desktop {
-        display: none;
-    }
-
-    .img-mobile {
-        display: block;
-        width: 21rem;
+    picture > img {
         border-radius: 12px 12px 0 0;
     }
 
@@ -221,4 +214,5 @@ footer a {
         padding: 1rem;
         width: 93%;
     }
+
 }
